@@ -15,7 +15,7 @@ body {
 
 .home {
     height: 100vh;
-    width: 100vw;
+    //width: 100vw;
     
     display: grid;
     grid-template-columns: [library-s] 1fr 1fr [schedule-s] 50px [library-e] 1fr [schedule-e];
