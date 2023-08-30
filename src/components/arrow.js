@@ -18,11 +18,9 @@ class Arrow extends Component {
         } else {
             document.getElementById(this.id).classList.add('arrow-closed');
         }
-            
-            this.setState({ status: !this.state.status})
+        this.setState({ status: !this.state.status})
     }.bind(this);
-    
-    
+
     render() {
         this.id = `arrow-${this.props.id}`
         return (
