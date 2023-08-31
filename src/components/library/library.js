@@ -13,14 +13,28 @@ class Library extends Component {
     
     renderCourses() {
         const data = this.props.courses
-        
+        let tracker = 0;
+        this.props.courses.forEach(course => {
+            if(course.enrolled == true) {
+                tracker++;
+            }
+        })
+        if (tracker >= 5) {
+            this.props.courses.forEach(course => {
+                course.limitReached = true;
+            })
+        } else {
+            this.props.courses.forEach(course => {
+                course.limitReached = false;
+            })
+        }
         return data.map((course, index) => {
-            return <LibraryCourse {...course} key={index}/>
+            return <LibraryCourse {...course} key={index} />
         })
     }
     
     render() {
-        console.log(this.props.courses)
+        //console.log(this.props.courses)
         return (
             <div className="library">
                 <h1 className="library__title">Course Library</h1>

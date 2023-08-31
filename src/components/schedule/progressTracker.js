@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-
-
 class ProgressTracker extends Component {
     
     calculateProgress = function() {

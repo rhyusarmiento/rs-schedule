@@ -31,8 +31,15 @@ class LibraryCourse extends Component {
             height 
         });
     }.bind(this);
-    
-    
+
+    handleToggleEnroll = function() {
+        if(this.props.limitReached) {
+            window.alert("limit reached")
+        } else {
+            this.props.toggleEnrolled(this.props.id)
+        }
+    }
+
     render() {
         this.id = `library-course-${this.props.id}`
         return (
@@ -48,7 +55,7 @@ class LibraryCourse extends Component {
                 />
                 <Action
                     id={this.props.id}
-                    onClick={() => this.props.toggleEnrolled(this.props.id)} 
+                    onClick={() => this.handleToggleEnroll()} 
                     className="library-course__action"
                 />
                 <AnimateHeight 
