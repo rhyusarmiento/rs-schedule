@@ -71,6 +71,13 @@ export function fetchCourses() {
                 enrolled: false,
                 limitReached: false
             },
+            {
+                id: 8,
+                title: 'Course 9',
+                description: 'many dogs have catsmany dogs have catsmany dogs have catsmany dogs have catsmany dogs have cats',
+                enrolled: false,
+                limitReached: false
+            },
         ]
     }
 }
