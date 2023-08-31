@@ -21,11 +21,11 @@ class LibraryCourse extends Component {
     
     handleCallback = function(status) {
         let height = this.state.height == 0 ? 'auto' : 0;
-        if(!status) {
-            document.getElementById(this.id).classList.add("library-course-selected");
-        } else {
-            document.getElementById(this.id).classList.add("library-course-selected");
-        }
+        //if(!status) {
+          //  document.getElementById(this.id).classList.add("library-course-selected");
+        //} else {
+          //  document.getElementById(this.id).classList.add("library-course-selected");
+        //}
         this.setState({ 
             status, 
             height 
