@@ -46,7 +46,6 @@ class LibraryCourse extends Component {
             <div id={this.id} className="library-course">
                 <div className="library-course__title-check">
                     <div className="library-course__title">{ this.props.title }</div>
-                    { Icon('fas fa-check', 'library-course__icon')}
                 </div>
                 <Arrow 
                     callback={status => this.status = this.handleCallback(status)} 
