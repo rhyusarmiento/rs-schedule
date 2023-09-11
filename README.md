@@ -1,5 +1,6 @@
 # Course Selector App
-
+production build:
+https://rs-schedule.netlify.app
 
 ## Available Scripts
 
