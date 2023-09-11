@@ -9,6 +9,7 @@ class Schedule extends Component {
     
     renderCourses() {
         const data = this.props.courses
+        // eslint-disable-next-line
         return data.map((course, index) => {
             if(course.enrolled && (this.amountEnrolled < 5)) {
                 this.amountEnrolled++;

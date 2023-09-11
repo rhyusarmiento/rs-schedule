@@ -4,10 +4,6 @@ import React, { Component } from 'react';
 
 class Action extends Component {
     
-    constructor(props) {
-        super(props)
-    }
-    
     handleAction = function() {
         if (this.props.enrolled === false) {
             this.props.onClick()
@@ -20,6 +16,7 @@ class Action extends Component {
         this.id = `action ${this.props.id}`
 
         return (
+            // eslint-disable-next-line
             <a 
                 id={this.id}
                 onClick={() => this.handleAction()} 

@@ -24,6 +24,7 @@ class Arrow extends Component {
     render() {
         this.id = `arrow-${this.props.id}`
         return (
+            // eslint-disable-next-line
             <a 
                 id={this.id}
                 onClick={() => this.toggleArrow()} 
