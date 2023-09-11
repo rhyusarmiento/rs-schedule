@@ -15,7 +15,7 @@ class Library extends Component {
         const data = this.props.courses
         let tracker = 0;
         this.props.courses.forEach(course => {
-            if(course.enrolled == true) {
+            if(course.enrolled === true) {
                 tracker++;
             }
         })

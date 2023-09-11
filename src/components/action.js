@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Icon from "./icon";
+//import Icon from "./icon";
 
 class Action extends Component {
     
@@ -9,7 +9,7 @@ class Action extends Component {
     }
     
     handleAction = function() {
-        if (this.props.enrolled == false) {
+        if (this.props.enrolled === false) {
             this.props.onClick()
         } else if (this.props.type) {
             this.props.onClick()

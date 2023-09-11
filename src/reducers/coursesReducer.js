@@ -12,7 +12,7 @@ export default function(state = [], action) {
             ]
         case TOGGLE_ENROLLED:
             const newCourses = state.map(course => {
-                if(course.id == action.payload) {
+                if(course.id === action.payload) {
                     course.enrolled = !course.enrolled
                 }
                 return course

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from "react-redux";
 import * as actions from "../../actions";
 
-import Icon from '../icon';
+//import Icon from '../icon';
 import Arrow from '../arrow';
 import Action from '../action';
 
@@ -20,7 +20,7 @@ class LibraryCourse extends Component {
     }
     
     handleCallback = function(status) {
-        let height = this.state.height == 0 ? 'auto' : 0;
+        let height = this.state.height === 0 ? 'auto' : 0;
         //if(!status) {
           //  document.getElementById(this.id).classList.add("library-course-selected");
         //} else {
